@@ -21,7 +21,7 @@ git remote add origin git@github.com:loicNorgeot/raspberry_pi.git
 
 To autommatically commit:
 ```
-git add *
+git add .
 git commit -m "first commit"
 git push -u origin master
 ```

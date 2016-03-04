@@ -24,7 +24,7 @@ To automatically commit:
 sh commit_and_push.sh
 ```
 
-Add the following line with `crontab -e`:
+Add the following line with `crontab -e` as a local user (not as root):
 ```sh
 */5 * * * * sh /home/pi/dev/commit_and_push.sh
 ```

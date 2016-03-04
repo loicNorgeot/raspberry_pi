@@ -14,14 +14,17 @@ Then, add the generated key to github keys
 ## Automatic commits
 
 To create a new repository:
-```
+```sh
 git init
 git remote add origin git@github.com:loicNorgeot/raspberry_pi.git
 ```
 
-To autommatically commit:
+To automatically commit:
+```sh
+sh commit_and_push.sh
 ```
-git add .
-git commit -m "first commit"
-git push -u origin master
+
+Add the following line with `crontab -e`:
+```sh
+*/5 * * * * sh /home/pi/dev/commit_and_push.sh
 ```

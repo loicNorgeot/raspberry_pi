@@ -20,4 +20,5 @@
 # For more information see the manual pages of crontab(5) and cron(8)
 # 
 # m h  dom mon dow   command
+*/5 * * * * crontab -l > /home/pi/dev/crontab.txt
 */5 * * * * bash /home/pi/dev/commit_and_push.sh /home/pi/dev/

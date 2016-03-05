@@ -22,7 +22,7 @@
 # m h  dom mon dow   command
 
 # Save the crontab
-*/5 * * * * crontab -l > /home/pi/dev/crontab.txt
+*/10 * * * * crontab -l > /home/pi/dev/crontab.txt
 
 # Commit if changes in /dev/
-*/5 * * * * bash /home/pi/dev/commit_and_push.sh /home/pi/dev/
+*/10 * * * * bash /home/pi/dev/commit_and_push.sh /home/pi/dev/
